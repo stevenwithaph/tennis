@@ -12,8 +12,6 @@ export class Player extends Phaser.GameObjects.Container {
 
   #alternate: boolean = false;
 
-  #invulnerable: boolean = false;
-
   constructor(scene: Phaser.Scene) {
     super(scene);
 
@@ -91,8 +89,6 @@ export class Player extends Phaser.GameObjects.Container {
   }
 
   startInvulnerability() {
-    this.#invulnerable = true;
-
     this.scene.tweens.add({
       targets: this,
       alpha: 0,
@@ -104,9 +100,7 @@ export class Player extends Phaser.GameObjects.Container {
     });
   }
 
-  endInvulnerability() {
-    this.#invulnerable = false;
-  }
+  endInvulnerability() {}
 
   move(movement: Phaser.Math.Vector2) {
     movement.scale(200);

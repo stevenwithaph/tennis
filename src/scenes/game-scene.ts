@@ -180,7 +180,7 @@ export class GameScene extends Phaser.Scene {
   }
 
   onSlashBallCollision(
-    slash: Phaser.Types.Physics.Arcade.GameObjectWithBody,
+    _: Phaser.Types.Physics.Arcade.GameObjectWithBody,
     ball: Ball
   ) {
     const angle = Phaser.Math.Angle.Between(
