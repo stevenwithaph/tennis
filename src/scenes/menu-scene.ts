@@ -13,15 +13,15 @@ export class MenuScene extends Phaser.Scene {
     this.load.image('ball', 'sprites/ball.png');
     this.load.image('racket', 'sprites/racket.png');
 
-    this.load.audio('music', 'bgm/music.ogg');
+    this.load.audio('music', 'bgm/music.mp3');
 
-    this.load.audio('entity-hit', 'sfx/entity-hit.ogg');
-    this.load.audio('racket-hit', 'sfx/racket-hit.ogg');
-    this.load.audio('wall-hit', 'sfx/wall-hit.ogg');
+    this.load.audio('entity-hit', 'sfx/entity-hit.mp3');
+    this.load.audio('racket-hit', 'sfx/racket-hit.mp3');
+    this.load.audio('wall-hit', 'sfx/wall-hit.mp3');
 
-    this.load.audio('swing', 'sfx/swing.ogg');
+    this.load.audio('swing', 'sfx/swing.mp3');
 
-    this.load.audio('select', 'sfx/select.ogg');
+    this.load.audio('select', 'sfx/select.mp3');
 
     this.load.spritesheet('titlecard', 'sprites/titlecard.png', {
       frameWidth: 384,
