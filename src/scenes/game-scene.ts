@@ -165,7 +165,19 @@ export class GameScene extends Phaser.Scene {
 
   onPlayerBallCollision(player: Player, ball: Ball) {
     player.hit();
-    this.cameras.main.shake(100, 0.001);
+    this.cameras.main.shake(100, 0.009);
+
+    this.physics.world.timeScale;
+
+    this.tweens.add({
+      targets: this.physics.world,
+      timeScale: {
+        from: 1.0,
+        to: 3.0,
+      },
+      yoyo: true,
+      duration: 50,
+    });
 
     ball.bounce();
 
